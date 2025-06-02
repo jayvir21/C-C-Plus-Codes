@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string a, string b, int c) {  // Constructor with parameters
+      brand = a;
+      model = b;
+      year = c;
+    }
+};
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("Mercedes", "A Class", 2019);
+  Car carObj2("Ford", "Mustang", 1969);
+  Car carObj3("Audi" , "Q Class", 2013);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  cout << carObj3.brand << " " << carObj3.model << " " << carObj3.year << "\n";
+  return 0;
+}
