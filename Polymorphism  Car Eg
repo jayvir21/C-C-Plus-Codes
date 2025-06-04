@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    virtual void startEngine() {  // Virtual function
+        cout << "Starting a generic car engine...\n";
+    }
+};
+
+class SportsCar : public Car {
+public:
+    void startEngine() override {  // Overriding base class method
+        cout << "Starting a high-performance sports car engine! VRUM VRUM!!!!!!!!!!!!!!!!!\n";
+    }
+};
+
+class ElectricCar : public Car {
+public:
+    void startEngine() override {
+        cout << "Starting a silent electric car engine...\n";
+    }
+};
+
+int main() {
+    Car* car1 = new SportsCar();
+    Car* car2 = new ElectricCar();
+
+    car1->startEngine();  // Calls SportsCar's version
+    car2->startEngine();  // Calls ElectricCar's version
+
+    delete car1;
+    delete car2;
+    return 0;
+}
