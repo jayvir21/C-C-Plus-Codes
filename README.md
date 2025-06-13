@@ -3,7 +3,7 @@ diff -This line will appear red(like a deletion) - This line will appear in gree
 void printCalendar(int year, int month) {
 <pre><code>```diff+ This line will showup in green on Github- This line should be red! This might be orange```</code></pre>
  {
-    int daysInMonth, startDay;
+    + int daysInMonth, startDay;
    } 
     // Array storing number of days in each month (excluding leap years)
     int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
