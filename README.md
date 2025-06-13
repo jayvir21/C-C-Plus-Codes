@@ -1,7 +1,6 @@
-<pre>```diff- This line apper red+ This line should be green!This line might be orange```</pre># HTML-CSS-Codes
 #include <stdio.h>
 
-void printCalendar(int year, int month) {
+🔴void printCalendar(int year, int month) {
     int daysInMonth, startDay;
     
     // Array storing number of days in each month (excluding leap years)
