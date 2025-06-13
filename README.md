@@ -1,3 +1,4 @@
+<pre><code>```diff + This line should be green on github - This line should be red ! This line might be orange```</code></pre>
 diff -This line will appear red(like a deletion) - This line will appear in green(like an addition) + 
 #include <stdio.h>
 void printCalendar(int year, int month) {
