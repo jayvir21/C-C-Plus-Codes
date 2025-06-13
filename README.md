@@ -1,8 +1,10 @@
-<pre>```diff- This line apper red - + This line should be green + !This line might be orange !```</pre>
+diff -This line will appear red(like a deletion) - This line will appear in green(like an addition) + 
 #include <stdio.h>
-<pre><code>void printCalendar(int year, int month)```diff+ This line will show up in green on Github```</code></pre> {
+void printCalendar(int year, int month) {
++ This line will showup in green on Github
+ {
     int daysInMonth, startDay;
-    
+   } 
     // Array storing number of days in each month (excluding leap years)
     int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
