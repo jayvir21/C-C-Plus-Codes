@@ -1,7 +1,7 @@
 diff -This line will appear red(like a deletion) - This line will appear in green(like an addition) + 
 #include <stdio.h>
 void printCalendar(int year, int month) {
-<pre><code>```diff+This line will showup in green on Github```</code></pre>
+<pre><code>```diff+ This line will showup in green on Github- This line should be red! This might be orange```</code></pre>
  {
     int daysInMonth, startDay;
    } 
