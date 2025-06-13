@@ -1,7 +1,7 @@
 <pre>```diff- This line apper red - + This line should be green + !This line might be orange !```</pre>
 #include <stdio.h>
 
-```diff- This line line appears green+ void printCalendar(int year, int month)``` {
+```diff- This line line appears green void printCalendar(int year, int month)``` {
     int daysInMonth, startDay;
     
     // Array storing number of days in each month (excluding leap years)
